@@ -24,6 +24,11 @@
   padding: 0 5rem 6rem 5rem;
 }
 
+.product-list-category {
+  box-sizing: border-box;
+  background-color: hsla(145, 61%, 69%, 1);
+}
+
 .products h2 {
   margin-top: 2rem;
   font-size: inherit;

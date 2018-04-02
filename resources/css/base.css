@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Arial-MT', sans-serif;
-  color: hsla(0, 0%, 29%, 1);
+  color: hsla(145, 61%, 90%, 1);
 }
 
 a {
@@ -74,14 +74,16 @@ select {
 
 .product-list {
   display: grid;
+  grid-column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3.75rem;
+  padding: 1.5rem;
 }
 
 .product-category {
   border-radius: 2px;
-  background-color: hsla(0, 0%, 100%, 1);
-  border: solid 1px hsla(0, 0%, 91%, 1);
+  background-color: hsla(145, 61%, 69%, 1);
+  border: solid 1px hsla(145, 61%, 69%, 1);
 }
 
 .product-category .description-category {
@@ -164,7 +166,8 @@ ul.breadcrumb li a {
 }
 
 
-/* Site-Wide Grid */
+/* Site-Wide Grid
+==================*/
 
 .container {
   display: grid;
@@ -175,7 +178,8 @@ ul.breadcrumb li a {
 }
 
 
-/* Header */
+/* Header
+==========*/
 
 header {
   grid-area: header;
