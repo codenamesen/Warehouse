@@ -239,7 +239,7 @@ header {
   padding-left: .625rem;
 }
 
-nav {
+header ~ nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-around;
@@ -250,7 +250,7 @@ nav {
   /*padding: 1.313rem 24.25rem 1.313rem 25rem;*/
 }
 
-nav a {
+header ~ nav a {
   border: 6px solid hsla(0, 0%, 100%, 1);
   font-weight: bold;
   border-radius: 20px;
@@ -261,23 +261,23 @@ nav a {
   transition: All 0.3s linear;
 }
 
-nav a:first-child {
+header ~ nav a:first-child {
   background-color: hsla(0, 0%, 0%, 1);
   color: hsla(0, 0%, 85%, 1);
   text-decoration: none;
 }
 
-nav a:visted {
+header ~ nav a:visted {
   color: hsla(0, 0%, 29%, 1);
 }
 
-nav a:hover {
+header ~ nav a:hover {
   background-color: hsla(0, 0%, 0%, 1);
   color: hsla(0, 0%, 85%, 1);
   text-decoration: none;
 }
 
-nav a:first-child:hover {
+header ~ nav a:first-child:hover {
   background-color: hsla(46, 100%, 50%, 1);
   color: hsla(0, 0%, 0%, 1);
   text-decoration: underline;
@@ -295,7 +295,7 @@ nav a:first-child:hover {
 }
 
 @media only screen and (max-width: 700px) {
-  nav {
+  header ~ nav {
     grid-template-columns: 1fr;
   }
 }
