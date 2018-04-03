@@ -251,7 +251,8 @@ nav {
 }
 
 nav a {
-  border: 2px solid hsla(0, 0%, 0%, 1);
+  border: 6px solid hsla(0, 0%, 100%, 1);
+  font-weight: bold;
   border-radius: 20px;
   padding: .5rem;
   margin: 1rem;
@@ -260,14 +261,26 @@ nav a {
   transition: All 0.3s linear;
 }
 
+nav a:first-child {
+  background-color: hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 85%, 1);
+  text-decoration: none;
+}
+
 nav a:visted {
   color: hsla(0, 0%, 29%, 1);
 }
 
 nav a:hover {
   background-color: hsla(0, 0%, 0%, 1);
-  color: hsla(0, 0%, 93%, 1);
+  color: hsla(0, 0%, 85%, 1);
   text-decoration: none;
+}
+
+nav a:first-child:hover {
+  background-color: hsla(46, 100%, 50%, 1);
+  color: hsla(0, 0%, 0%, 1);
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1100px) {
