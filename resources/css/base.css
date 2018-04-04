@@ -346,10 +346,10 @@ footer .links {
 
 footer h4 {
   width: 11rem;
-  border: 1px solid hsla(146, 100%, 0%, 1);
+  border: 1px solid hsla(240, 0%, 100%, 1);
   border-radius: 15px;
-  background-color: hsla(146, 100%, 0%, 1);
-  color: hsla(146, 0%, 100%, 1);
+  background-color: hsla(240, 0%, 100%, 1);
+  color: hsla(146, 100%, 0%, 1);
   padding-top: 0.5rem;
   padding-left: 1rem;
   padding-bottom: 0.5rem;
@@ -357,7 +357,7 @@ footer h4 {
 }
 
 footer a {
-  color: hsla(0, 0%, 29%, 1);
+  color: hsla(146, 100%, 0%, 1);
   margin-left: 1.2rem;
   font-size: 1rem;
   text-decoration: underline;
