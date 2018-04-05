@@ -70,6 +70,7 @@ select {
 
 .image-container {
   overflow: hidden;
+  border: 2.5px solid white;
 }
 
 .image-container img {
@@ -201,6 +202,10 @@ header {
   padding: .75rem 5rem;
   font-size: inherit;
   background-color: hsla(46, 100%, 50%, 1);
+}
+
+header .image-container {
+  border: none;
 }
 
 .search-bar {

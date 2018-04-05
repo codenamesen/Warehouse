@@ -38,6 +38,11 @@
   border-radius: 10px;
 }
 
+.recent-product-list {
+  background-color: hsla(11, 80%, 60%, 0.85);
+  border-radius: 10px;
+}
+
 .products h2 {
   margin-top: 2rem;
   padding-top: 1.5rem;
