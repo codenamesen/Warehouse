@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', Sans-Serif;;
   color: color: hsla(0, 0%, 0%, 1);
 }
 
@@ -28,7 +28,6 @@ h2,
 h3,
 h4 {
   color: hsla(0, 0%, 0%, 1);
-  font-family: 'Roboto', Sans-Serif;
 }
 
 h2 {
@@ -213,7 +212,6 @@ header .image-container {
   border-radius: 33px 53px 33px 53px;
   width: 100%;
   box-shadow: 0 2px 3px 0 hsla(146, 0%, 0%, 0.5);
-  font-family: 'Roboto', Sans-Serif;
 }
 
 .search-bar input {
@@ -241,7 +239,6 @@ header .image-container {
   padding: .875rem 1rem;
   border-radius: 54px;
   background-color: hsla(343, 100%, 39%, 1);
-  font-family: 'Roboto', Sans-Serif;
   font-size: 1.3rem;
 }
 
@@ -265,7 +262,6 @@ header ~ nav a {
   border-radius: 20px;
   padding: .5rem;
   margin: 1rem;
-  font-family: 'Roboto', Sans-Serif;
   text-align: center;
   text-decoration: underline;
   transition: All 0.3s linear;
@@ -368,8 +364,7 @@ footer h4 {
 
 footer a {
   color: hsla(146, 100%, 0%, 1);
-  margin-left: 1.2rem;
-  font-family: 'Roboto', Sans-Serif;
+  margin-left: 1.2rem;  
   font-size: 1rem;
   font-weight: bold;
   text-decoration: underline;
