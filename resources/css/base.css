@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  font-family: 'Arial-MT', sans-serif;
+  font-family: 'Lora', serif;
+  color: color: hsla(0, 0%, 0%, 1);
 }
 
 a {
@@ -27,14 +28,15 @@ h2,
 h3,
 h4 {
   color: hsla(0, 0%, 0%, 1);
+  font-family: 'Roboto', Sans-Serif;
 }
 
 h2 {
-  font-size: 2rem;;
+  font-size: 2.5rem;;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -84,7 +86,7 @@ select {
 
 .product-list {
   display: grid;
-  grid-gap: 1.5rem 1rem;
+  grid-gap: 1.5rem 1.2rem;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3.75rem;
   padding: 1.5rem;
@@ -93,7 +95,7 @@ select {
 .product-category {
   border-radius: 2px;
   background-color: hsla(145, 61%, 69%, 1);
-  border: solid 1px hsla(145, 61%, 69%, 1);
+  /*border: solid 1px red;*/
 }
 
 .product-category .description-category {
@@ -206,6 +208,7 @@ header {
   border-radius: 33px 53px 33px 53px;
   width: 100%;
   box-shadow: 0 2px 3px 0 hsla(146, 0%, 0%, 0.5);
+  font-family: 'Roboto', Sans-Serif;
 }
 
 .search-bar input {
@@ -233,6 +236,8 @@ header {
   padding: .875rem 1rem;
   border-radius: 54px;
   background-color: hsla(343, 100%, 39%, 1);
+  font-family: 'Roboto', Sans-Serif;
+  font-size: 1.3rem;
 }
 
 .cart img {
@@ -252,10 +257,10 @@ header ~ nav {
 
 header ~ nav a {
   border: 6px solid hsla(0, 0%, 100%, 1);
-  font-weight: bold;
   border-radius: 20px;
   padding: .5rem;
   margin: 1rem;
+  font-family: 'Roboto', Sans-Serif;
   text-align: center;
   text-decoration: underline;
   transition: All 0.3s linear;
@@ -314,7 +319,6 @@ header ~ nav a:first-child:hover {
 #main h2 {
   margin-bottom: 2rem;
   margin-top: 2rem;
-  /*font-size: inherit;*/
 }
 
 #main .button {
@@ -354,12 +358,15 @@ footer h4 {
   padding-left: 1rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 footer a {
   color: hsla(146, 100%, 0%, 1);
   margin-left: 1.2rem;
+  font-family: 'Roboto', Sans-Serif;
   font-size: 1rem;
+  font-weight: bold;
   text-decoration: underline;
   /*transition: text-decoration 1.5s linear 0.5s;*/
 }

@@ -1,23 +1,32 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   height: 21.75rem;
   margin-top: 3rem;
-  border-radius: 1.5rem;
   background-image: url('../img/home/hero.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: hsla(0, 0%, 100%, 1);
 }
 
 .hero h2 {
-  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 9.5rem;
+  padding: 0.6rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
   color: hsla(0, 100%, 100%, 1);
-  font-family: Helvetica;
+  border: 4px solid hsla(0, 100%, 100%, 1);
+  border-radius: 32px;
+  font-family: 'Roboto', Sans-Serif;
   font-size: inherit;
   font-weight: bold;
-  text-align: center;
+
 }
 
 .products {
@@ -25,12 +34,13 @@
 }
 
 .product-list-category {
-  box-sizing: border-box;
   background-color: hsla(145, 61%, 69%, 1);
+  border-radius: 10px;
 }
 
 .products h2 {
   margin-top: 2rem;
+  padding-top: 1.5rem;
   /*font-size: inherit;*/
 }
 
