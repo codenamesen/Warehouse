@@ -25,17 +25,22 @@
 
 .about p {
   padding-bottom: 2rem;
-  font-size: inherit;
+  font-size: 1.1rem;
   line-height: 1.8;
+  font-style: "Lora", Serif;
+  text-align: left;
 }
 
-.about .join {
+footer.join {  
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   justify-items: center;
+  align-items: center;
   padding: 1.5rem 0;
   border: solid 1px #e7e7e7;
   border-radius: 25px;
-  background-color: hsla(145, 61%, 69%, 1);
+  background-color: hsla(0, 0%, 85%, 1);
 }
 
 @media only screen and (max-width: 735px) {
