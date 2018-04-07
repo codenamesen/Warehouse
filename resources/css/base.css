@@ -57,12 +57,14 @@ select {
   background-color: hsla(0, 0%, 13%, 1);
   text-align: center;
   color: hsla(0, 0%, 93%, 1);
+  text-decoration: underline;
   transition: .25s;
 }
 
 .button:hover {
   background-color: hsla(0, 0%, 13%, 1);
   color: hsla(0, 100%, 100%, 1);
+  text-decoration: none;
 }
 
 /* Reusable Component - Image Container */
@@ -240,6 +242,7 @@ header .image-container {
   border-radius: 54px;
   background-color: hsla(343, 100%, 39%, 1);
   font-size: 1.3rem;
+  text-decoration: none;
 }
 
 .cart img {
