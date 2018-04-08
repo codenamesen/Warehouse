@@ -3,10 +3,17 @@
   src: url('../fonts/ari.ttf') format('truetype');
 }
 
-/* Site-Wide Styles */
+/* Site-Wide Styles
+===================*/
 
 html {
   font-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -50,7 +57,14 @@ select {
   padding: 1rem;
 }
 
-/* Reusable Component - Button */
+@media only screen and (max-width: 450px) {
+  input {
+    padding: .5rem;
+  }
+}
+
+/* Reusable Component - Button
+==============================*/
 
 .button {
   border-radius: 30px;
@@ -67,7 +81,8 @@ select {
   text-decoration: none;
 }
 
-/* Reusable Component - Image Container */
+/* Reusable Component - Image Container
+=======================================*/
 
 .image-container {
   overflow: hidden;
@@ -80,7 +95,8 @@ select {
   height: auto;
 }
 
-/* Reusable Component - Product List */
+/* Reusable Component - Product List
+====================================*/
 
 .product-list-section {
   padding: 2rem 5rem 3.75rem 5rem;
@@ -97,7 +113,6 @@ select {
 .product-category {
   border-radius: 2px;
   background-color: hsla(145, 61%, 69%, 1);
-  /*border: solid 1px red;*/
 }
 
 .product-category .description-category {
@@ -134,7 +149,8 @@ select {
 }
 
 
-/* Reusable Component - Form Field With Label */
+/* Reusable Component - Form Field With Label
+=============================================*/
 .field {
   display: flex;
   flex-direction: column;
@@ -145,7 +161,8 @@ select {
 }
 
 
-/* Reusable Component - Navigation Breadcrumbs */
+/* Reusable Component - Navigation Breadcrumbs
+==============================================*/
 ul.breadcrumb {
     padding: 2rem 4rem;
     list-style: none;
@@ -200,7 +217,7 @@ header {
   width: 100%;
   grid-area: header;
   display: grid;
-  grid-template-columns: 22rem 1fr 22rem;
+  grid-template-columns: 2fr 5fr 2fr;
   align-items: center;
   padding: .75rem 5rem;
   font-size: inherit;
@@ -253,6 +270,38 @@ header .image-container {
   padding-left: .625rem;
 }
 
+@media only screen and (max-width: 1100px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5px;
+    justify-content: space-between;
+  }
+
+  .image-container {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+
+  .cart {
+    grid-area: 1 / 2 / span 1 / span 1;
+    justify-self: end;
+  }
+
+  .search-bar {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cart span {
+    display: none;
+  }
+
+  .cart img {
+    padding: 0rem;
+  }
+}
+
 header ~ nav {
   position: relative;
   top: 75px;
@@ -297,24 +346,14 @@ header ~ nav a:first-child:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1100px) {
-  header {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .cart {
-    justify-self: auto;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   header ~ nav {
     grid-template-columns: 1fr;
   }
 }
 
-/* Main Section */
+/* Main Section
+===============*/
 
 #main {
   position: relative;
@@ -338,7 +377,8 @@ header ~ nav a:first-child:hover {
   padding: .875rem 0;
 }
 
-/* Footer */
+/* Footer
+=========*/
 
 footer {
   position: relative;
