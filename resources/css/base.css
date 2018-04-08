@@ -10,7 +10,7 @@ html {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1060px) {
   html {
     font-size: 14px;
   }
@@ -228,6 +228,7 @@ header {
 
 header .image-container {
   border: none;
+  padding-right: 1.5rem;
 }
 
 .search-bar {
@@ -270,7 +271,13 @@ header .image-container {
   padding-left: .625rem;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 935px) {
+  header {
+    padding: .75rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -346,9 +353,48 @@ header ~ nav a:first-child:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 700px) {
+/* At screen size more than 740px the menu button gets hidden
+==============================================================*/
+
+@media only screen and (min-width: 741px) {
+  header ~ nav .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  header ~ nav {
+    padding: 1.313rem 8rem 1.313rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  header ~ nav {
+    padding: 1.313rem 1rem 1.313rem 1rem;
+  }
+
+  header ~ nav {
+    top: 68px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
   header ~ nav {
     grid-template-columns: 1fr;
+  }
+
+  header ~ nav {
+    top: 70px;
+  }
+
+  header ~ nav .desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header ~ nav {
+    top: 118px;
   }
 }
 
@@ -375,6 +421,12 @@ header ~ nav a:first-child:hover {
   box-sizing: border-box;
   width: 14.375rem;
   padding: .875rem 0;
+}
+
+@media only screen and (max-width: 700px) {
+  #main {
+    top: 118px;
+  }
 }
 
 /* Footer
