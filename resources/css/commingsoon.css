@@ -12,3 +12,11 @@ h2 {
   padding: 20px;
   border-radius: 10px;
 }
+
+.home a {
+  display: inline-block;
+  width: 25rem;
+  padding: 1rem 5rem;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
