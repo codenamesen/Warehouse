@@ -31,7 +31,7 @@
   text-align: left;
 }
 
-footer.join {  
+footer.join {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr;
@@ -46,6 +46,12 @@ footer.join {
 @media only screen and (max-width: 735px) {
   .about h1 {
     font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .site-footer {
+    top: 110px;
   }
 }
 
